@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "option_trades"
+version = "0.1.0"
+description = ""
+authors = ["Mac Anderson <mac@macanderson.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "option_trades", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+tradesignals = {path = "../../.."}
+tornado = "^6.4.2"
+confluent-kafka = {extras = ["avro"], version = "^2.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

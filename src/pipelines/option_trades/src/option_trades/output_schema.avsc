@@ -1,0 +1,260 @@
+{
+    "type": "record",
+    "name": "OptionTrades",
+    "namespace": "com.example.avro",
+    "doc": "Schema for option trades data.",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string",
+            "doc": "Unique identifier for the trade."
+        },
+        {
+            "name": "timestamp_ms",
+            "type": "long",
+            "logicalType": "timestamp-millis",
+            "doc": "Timestamp in milliseconds since UNIX epoch of trade or book update."
+        },
+        {
+            "name": "symbol",
+            "type": "string",
+            "doc": "Option Symbol as a string formatted to the OPRA-PILLAR standard."
+        },
+        {
+            "name": "underlying",
+            "type": "string",
+            "doc": "Underlying Symbol."
+        },
+        {
+            "name": "spot",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Current price of the underlying asset."
+        },
+        {
+            "name": "strike",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Strike price of the contract."
+        },
+        {
+            "name": "exp_date",
+            "type": {
+                "type": "int",
+                "logicalType": "date"
+            },
+            "doc": "The maturity/last trade date of the contract as the number of days since the unix epoch. Example: 2024-01-01"
+        },
+        {
+            "name": "dte",
+            "type": "int",
+            "doc": "Days to Expiry."
+        },
+        {
+            "name": "put_call",
+            "type": "string",
+            "doc": "Option Type: Put or Call."
+        },
+        {
+            "name": "qty",
+            "type": "int",
+            "doc": "Trade quantity."
+        },
+        {
+            "name": "price",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Trade price."
+        },
+        {
+            "name": "premium",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 38,
+                "scale": 9
+            },
+            "doc": "Total value of the trade."
+        },
+        {
+            "name": "side",
+            "type": "string",
+            "doc": "Book side of the trade, A=Ask, B=Bid, N=None."
+        },
+        {
+            "name": "bias",
+            "type": "string",
+            "doc": "Sentiment of the trade, B=Bullish, R=Bearish, N=None."
+        },
+        {
+            "name": "score",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 8
+            },
+            "doc": "Sentiment score. -1.000000 very bearish, +1.000000 very bullish, 0.000000 neutral."
+        },
+        {
+            "name": "venue",
+            "type": "string",
+            "doc": "The venue that published the trade."
+        },
+        {
+            "name": "condition",
+            "type": "string",
+            "doc": "Trade condition code."
+        },
+        {
+            "name": "bid",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Best bid price (NBBO Bid)."
+        },
+        {
+            "name": "ask",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Best ask price (NBBO Ask)."
+        },
+        {
+            "name": "theo",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 21,
+                "scale": 9
+            },
+            "doc": "Theoretical price of the option."
+        },
+        {
+            "name": "iv",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Implied Volatility of the option expressed as a fraction (e.g. 0.1234567890 for 12.34567890%)."
+        },
+        {
+            "name": "delta",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Delta of the option, ranges from -1.0000000000 to 1.0000000000."
+        },
+        {
+            "name": "gamma",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Gamma of the option, typically a very small number requiring high precision."
+        },
+        {
+            "name": "vega",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Vega of the option, measures sensitivity to volatility changes."
+        },
+        {
+            "name": "theta",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Theta of the option, represents time decay and is typically negative."
+        },
+        {
+            "name": "rho",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Rho of the option, measures sensitivity to interest rate changes."
+        },
+        {
+            "name": "v_ask",
+            "type": "int",
+            "doc": "The number of contracts nearer to the NBBO ask."
+        },
+        {
+            "name": "v_bid",
+            "type": "int",
+            "doc": "The number of contracts nearer to the NBBO bid."
+        },
+        {
+            "name": "v_unk",
+            "type": "int",
+            "doc": "The number of contracts traded without a clear aggressor."
+        },
+        {
+            "name": "v_mid",
+            "type": "int",
+            "doc": "The number of contracts traded in the middle of the spread."
+        },
+        {
+            "name": "v_leg",
+            "type": "int",
+            "doc": "The number of contracts traded as part of a complex trade with multiple legs."
+        },
+        {
+            "name": "v_stk",
+            "type": "int",
+            "doc": "The number of shares traded as a result of the contract traded as a leg in complex, multiple leg trades."
+        },
+        {
+            "name": "v",
+            "type": "long",
+            "doc": "The number of contracts traded at the time of trade execution for the trading session."
+        },
+        {
+            "name": "oi",
+            "type": "long",
+            "doc": "The contract's open interest is the number of un-closed contracts remain after the previous session. Calculated nightly."
+        },
+        {
+            "name": "tags",
+            "type": {
+                "type": "array",
+                "items": "string"
+            },
+            "doc": "List of flags associated with the trade."
+        }
+    ]
+}
