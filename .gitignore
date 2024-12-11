@@ -14,3 +14,6 @@ DS_Store
 .pytest_cache
 .python-version
 poetry.lock
+vault/
+**/*.nogit.*
+**/.DS_Store
