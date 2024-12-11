@@ -32,19 +32,37 @@ class TradingDay:
         self.market_code = market_code
         self.dt = dt
         self.nyse = get_calendar(market_code)
-        self.schedule = self.nyse.schedule(start_date=dt - timedelta(days=10), end_date=dt + timedelta(days=10))
-        self.current_session = self.schedule[self.schedule.index.date == dt.date()]
+        start_date = dt - timedelta(days=10)
+        end_date = dt + timedelta(days=10)
+        self.schedule = self.nyse.schedule(
+            start_date=start_date, end_date=end_date
+        )
+        self.current_session = self.schedule[
+            self.schedule.index.date == dt.date()
+        ]
         self.open_hour = self.current_session.iloc[0].market_open.hour
         self.open_minute = self.current_session.iloc[0].market_open.minute
         self.close_hour = self.current_session.iloc[0].market_close.hour
         self.close_minute = self.current_session.iloc[0].market_close.minute
         self.tz = self.current_session.iloc[0].market_open.tzinfo
-        self.hours_in_trading_day = (self.current_session.iloc[0].market_close - self.current_session.iloc[0].market_open).seconds // 3600
-        self.minutes_in_trading_day = (self.current_session.iloc[0].market_close - self.current_session.iloc[0].market_open).seconds // 60
+        market_close = self.current_session.iloc[0].market_close
+        market_open = self.current_session.iloc[0].market_open
+        duration = market_close - market_open
+        self.hours_in_trading_day = duration.seconds // 3600
+        self.minutes_in_trading_day = duration.seconds // 60
         self.is_market_open = self.nyse.is_session(dt)
-        self.minutes_until_open = (self.current_session.iloc[0].market_open - dt).seconds // 60 if dt < self.current_session.iloc[0].market_open else 0
-        self.minutes_until_close = (self.current_session.iloc[0].market_close - dt).seconds // 60 if dt < self.current_session.iloc[0].market_close else 0
-        self.days_until_open = (self.current_session.iloc[0].market_open.date() - dt.date()).days if dt < self.current_session.iloc[0].market_open else 0
+        if dt < market_open:
+            self.minutes_until_open = (market_open - dt).seconds // 60
+        else:
+            self.minutes_until_open = 0
+        if dt < market_close:
+            self.minutes_until_close = (market_close - dt).seconds // 60
+        else:
+            self.minutes_until_close = 0
+        if dt < market_open:
+            self.days_until_open = (market_open.date() - dt.date()).days
+        else:
+            self.days_until_open = 0
         self.session_type = "rth"  # Assuming regular trading hours for simplicity
 
 
@@ -72,7 +90,9 @@ class MarketCalendar:
         if dt is None:
             dt = datetime.now(timezone.utc)
         nyse = get_calendar(market_code)
-        schedule = nyse.schedule(start_date=dt - timedelta(days=10), end_date=dt)
+        schedule = nyse.schedule(
+            start_date=dt - timedelta(days=10), end_date=dt
+        )
         last_session = schedule[schedule.index < dt].iloc[-1].market_open
         return last_session.tz_convert(timezone.utc)
 

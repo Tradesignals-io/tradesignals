@@ -1,0 +1,20 @@
+# Pipeline Configurations
+pipelines:
+
+  option_trades:
+    directory: option_trades
+    path: /src/pipelines/option_trades/Dockerfile
+    name: "Options Trading Pipeline"
+    summary: "Real-time options market data processing and analytics pipeline"
+
+  equity_trades:
+    directory: equity_trades
+    path: /src/pipelines/equity_trades/Dockerfile
+    name: "Equity Trading Pipeline"
+    summary: "Real-time equity market data processing and analytics pipeline"
+
+  template:
+    directory: template
+    path: /src/pipelines/template/Dockerfile
+    name: "Template Pipeline"
+    summary: "Template Pipeline"

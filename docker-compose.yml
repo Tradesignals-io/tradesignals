@@ -1,0 +1,75 @@
+networks:
+  pipeline-net:
+    driver: bridge
+    ipam:
+      config:
+      - gateway: 192.168.1.1
+        ip_range: 192.168.1.100/24
+        subnet: 192.168.1.0/24
+services:
+  control-center:
+    depends_on:
+    - kafka
+    - zookeeper
+    environment:
+      CONTROL_CENTER_BOOTSTRAP_SERVERS: kafka:9092
+      CONTROL_CENTER_CONNECT_CLUSTER: http://connect:8083
+      CONTROL_CENTER_INTERNAL_TOPICS_PARTITIONS: 1
+      CONTROL_CENTER_KSQL_KSQLDB1_ADVERTISED_URL: http://localhost:8088
+      CONTROL_CENTER_KSQL_KSQLDB1_URL: http://ksqldb-server:8088
+      CONTROL_CENTER_MONITORING_INTERCEPTOR_TOPIC_PARTITIONS: 1
+      CONTROL_CENTER_REPLICATION_FACTOR: 1
+      CONTROL_CENTER_SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      CONTROL_CENTER_STREAMS_NUM_STREAM_THREADS: 2
+      CONTROL_CENTER_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: confluentinc/cp-enterprise-control-center:latest
+    networks:
+    - pipeline-net
+    ports:
+    - 9021:9021
+  equity_trades:
+    build:
+      context: ./src/pipelines/equity_trades
+      dockerfile: Dockerfile
+    networks:
+    - pipeline-net
+    ports:
+    - 8002:8002
+  flink:
+    environment:
+    - JOB_MANAGER_RPC_ADDRESS=flink
+    image: flink:latest
+    networks:
+    - pipeline-net
+    ports:
+    - 8081:8081
+  kafka:
+    depends_on:
+    - zookeeper
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_BROKER_ID: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    image: confluentinc/cp-kafka:latest
+    networks:
+    - pipeline-net
+    ports:
+    - 9092:9092
+  option_trades:
+    build:
+      context: ./src/pipelines/option_trades
+      dockerfile: Dockerfile
+    networks:
+    - pipeline-net
+    ports:
+    - 8001:8001
+  zookeeper:
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    image: confluentinc/cp-zookeeper:latest
+    networks:
+    - pipeline-net
+    ports:
+    - 2181:2181

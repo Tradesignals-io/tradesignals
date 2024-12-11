@@ -1,13 +1,27 @@
 [tool.poetry]
-name = "equity_trades"
+name = "option_trades"
 version = "0.1.0"
 description = ""
 authors = ["Mac Anderson <mac@macanderson.com>"]
 readme = "README.md"
 
+packages = [
+    { include = "option_trades", from = "src" },
+]
+
 [tool.poetry.dependencies]
 python = ">=3.11,<3.14"
-tradesignals = {path = "../../.."}
+tornado = "^6.4.2"
+confluent-kafka = "^2.6.1"
+attrs = "^24.2.0"
+cattrs = "^24.1.2"
+pandas-market-calendars = "^4.4.2"
+orjson = "^3.10.12"
+pyyaml = "^6.0.2"
+pandas = "^2.2.3"
+uvloop = "^0.21.0"
+rich = "^13.9.4"
+databento = "^0.46.0"
 
 
 [build-system]

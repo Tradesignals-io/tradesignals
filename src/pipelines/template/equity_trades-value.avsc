@@ -1,0 +1,179 @@
+{
+    "doc": "Equity trades alongside the exchange best bid and offer (TBBO) immediately before the effect of each trade.",
+    "fields": [
+        {
+            "doc": "Unique identifier for the trade values must be either a 36 character UUID or 18 character short UUID.",
+            "flink.maxLength": 36,
+            "flink.minLength": 18,
+            "flink.version": "1",
+            "name": "id",
+            "type": "string"
+        },
+        {
+            "aliases": [
+                "ticker",
+                "symbol_id",
+                "ric",
+                "security_id",
+                "instrument_id",
+                "sym",
+                "T"
+            ],
+            "doc": "The symbol of the instrument related to the record.",
+            "flink.maxLength": 9,
+            "flink.minLength": 1,
+            "flink.version": "1",
+            "name": "symbol",
+            "type": "string"
+        },
+        {
+            "aliases": [
+                "exchange",
+                "publisher",
+                "venue_id",
+                "publisher_id",
+                "xchg"
+            ],
+            "doc": "The name of the exchange the data was received from.",
+            "flink.maxLength": 9,
+            "flink.minLength": 1,
+            "flink.version": "1",
+            "name": "venue",
+            "type": "string"
+        },
+        {
+            "aliases": [
+                "ts",
+                "ts_event",
+                "time",
+                "exec_time",
+                "timestamp_ms"
+            ],
+            "doc": "Timestamp in milliseconds since UNIX epoch of trade or book update.",
+            "flink.precision": 3,
+            "flink.version": "1",
+            "logicalType": "timestamp-millis",
+            "name": "timestamp_ms",
+            "type": "long"
+        },
+        {
+            "aliases": [
+                "size",
+                "quantity"
+            ],
+            "doc": "Trade quantity.",
+            "name": "qty",
+            "type": "int"
+        },
+        {
+            "doc": "Last traded price.",
+            "name": "price",
+            "type": {
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 6,
+                "type": "bytes"
+            }
+        },
+        {
+            "aliases": [
+                "side"
+            ],
+            "doc": "The book side of the trade, A=Ask, B=Bid, N=None.",
+            "name": "side",
+            "type": {
+                "name": "TradeSide",
+                "symbols": [
+                    "A",
+                    "B",
+                    "N"
+                ],
+                "type": "enum"
+            }
+        },
+        {
+            "aliases": [
+                "sentiment"
+            ],
+            "doc": "The sentiment of the trade, B=Bullish, R=Bearish, N=None.",
+            "name": "bias",
+            "type": {
+                "name": "TradeBias",
+                "symbols": [
+                    "B",
+                    "R",
+                    "N"
+                ],
+                "type": "enum"
+            }
+        },
+        {
+            "aliases": [
+                "bull_bear"
+            ],
+            "doc": "Market sentiment indicator between -1 and 1.",
+            "name": "score",
+            "type": {
+                "logicalType": "decimal",
+                "precision": 8,
+                "scale": 6,
+                "type": "bytes"
+            }
+        },
+        {
+            "doc": "Best bid price in the order book.",
+            "name": "bid",
+            "type": {
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 6,
+                "type": "bytes"
+            }
+        },
+        {
+            "doc": "Best ask price in the order book.",
+            "name": "ask",
+            "type": {
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 6,
+                "type": "bytes"
+            }
+        },
+        {
+            "doc": "Top level bid size.",
+            "name": "bid_qty",
+            "type": "int"
+        },
+        {
+            "doc": "Top level ask size.",
+            "name": "ask_qty",
+            "type": "int"
+        },
+        {
+            "doc": "Number of bid orders at top level.",
+            "name": "bid_ct",
+            "type": "int"
+        },
+        {
+            "doc": "Number of ask orders at top level.",
+            "name": "ask_ct",
+            "type": "int"
+        },
+        {
+            "aliases": [
+                "flags"
+            ],
+            "default": [],
+            "doc": "List of reporting flags associated with the trade. Default is an empty list.",
+            "name": "tags",
+            "type": {
+                "items": "string",
+                "type": "array"
+            }
+        }
+    ],
+    "name": "equity_trade",
+    "namespace": "tradesignals.types.market_data",
+    "type": "record"
+}

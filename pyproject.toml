@@ -31,6 +31,9 @@ uvloop = "^0.21.0"
 requests = "^2.32.3"
 tornado = "^6.4.2"
 click = ">=8.1.7"
+databento = "^0.46.0"
+orjson = "^3.10.12"
+tradesignals-python = "^0.1.0a10"
 
 [tool.poetry.dev-dependencies]
 Pygments = ">=2.18.0"
