@@ -13,7 +13,15 @@ packages = [
 python = ">=3.11,<3.14"
 tradesignals = {path = "../../.."}
 tornado = "^6.4.2"
-confluent-kafka = {extras = ["avro"], version = "^2.6.1"}
+confluent-kafka = "^2.6.1"
+attrs = "^24.2.0"
+cattrs = "^24.1.2"
+pandas-market-calendars = "^4.4.2"
+orjson = "^3.10.12"
+pyyaml = "^6.0.2"
+pandas = "^2.2.3"
+uvloop = "^0.21.0"
+rich = "^13.9.4"
 
 
 [build-system]
