@@ -1,0 +1,5 @@
+Starting client
+Subscribing to DBEQ.BASIC
+Subscribed to DBEQ.BASIC
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 18614, ts_event: 1734094801744190849 }, price: 1.960000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094801745205429, ts_in_delta: 250647, sequence: 56493, levels: [BidAskPair { bid_px: 1.930000000, ask_px: 1.960000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }

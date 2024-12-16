@@ -1,0 +1,262 @@
+{
+    "type": "record",
+    "name": "OptionTrades",
+    "namespace": "io.tradesignals.equity_options",
+    "doc": "Schema for equity option trades, including exchange best bid and offer before each trade.",
+    "fields": [
+        {
+            "name": "id",
+            "type": "string",
+            "doc": "Unique trade identifier, either a 36 or 18 character UUID."
+        },
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            },
+            "doc": "Timestamp in milliseconds since UNIX epoch."
+        },
+        {
+            "name": "symbol",
+            "type": "string",
+            "doc": "Symbol representing the traded instrument."
+        },
+        {
+            "name": "underlying",
+            "type": "string",
+            "doc": "Symbol of the underlying asset."
+        },
+        {
+            "name": "spot",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 12,
+                "scale": 2
+            },
+            "doc": "Current price of the underlying asset."
+        },
+        {
+            "name": "strike",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 12,
+                "scale": 2
+            },
+            "doc": "Strike price of the option."
+        },
+        {
+            "name": "exp_date",
+            "type": {
+                "type": "int",
+                "logicalType": "date"
+            },
+            "doc": "Expiration date of the option, in days since UNIX epoch."
+        },
+        {
+            "name": "dte",
+            "type": "int",
+            "doc": "Days to Expiry."
+        },
+        {
+            "name": "put_call",
+            "type": "string",
+            "doc": "Option Type: Put or Call."
+        },
+        {
+            "name": "qty",
+            "type": "int",
+            "doc": "Quantity of options traded."
+        },
+        {
+            "name": "price",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 12,
+                "scale": 2
+            },
+            "doc": "Price at which the last trade occurred."
+        },
+        {
+            "name": "premium",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 12,
+                "scale": 2
+            },
+            "doc": "Premium of the option."
+        },
+        {
+            "name": "side",
+            "type": "string",
+            "doc": "Side of the trade, A for Ask, B for Bid, N for None."
+        },
+        {
+            "name": "bias",
+            "type": "string",
+            "doc": "Bias of the trade, B for Bullish, R for Bearish, N for Neutral."
+        },
+        {
+            "name": "score",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 8,
+                "scale": 6
+            },
+            "doc": "Bull-bear score, indicating market sentiment."
+        },
+        {
+            "name": "venue",
+            "type": "string",
+            "doc": "Name of the trading venue and dataset."
+        },
+        {
+            "name": "trade_code",
+            "type": "string",
+            "doc": "Condition code of the trade."
+        },
+        {
+            "name": "iv",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 18,
+                "scale": 16
+            },
+            "doc": "Implied volatility of the option."
+        },
+        {
+            "name": "bid_px",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 14,
+                "scale": 4
+            },
+            "doc": "Best bid price available."
+        },
+        {
+            "name": "ask_px",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 14,
+                "scale": 4
+            },
+            "doc": "Current best ask price for the option."
+        },
+        {
+            "name": "theo",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 14,
+                "scale": 4
+            },
+            "doc": "Theoretical price of the option."
+        },
+        {
+            "name": "delta",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 16,
+                "scale": 14
+            },
+            "doc": "Delta of the option, indicating sensitivity to the underlying asset's price."
+        },
+        {
+            "name": "gamma",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 16,
+                "scale": 14
+            },
+            "doc": "Gamma of the option, representing the rate of change of delta."
+        },
+        {
+            "name": "theta",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 16,
+                "scale": 14
+            },
+            "doc": "Theta of the option, representing time decay."
+        },
+        {
+            "name": "vega",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 16,
+                "scale": 14
+            },
+            "doc": "Vega of the option, representing sensitivity to volatility."
+        },
+        {
+            "name": "rho",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 16,
+                "scale": 14
+            },
+            "doc": "Rho of the option, representing sensitivity to interest rate changes."
+        },
+        {
+            "name": "vol_ask",
+            "type": "int",
+            "doc": "Volume of options traded at the ask price."
+        },
+        {
+            "name": "vol_bid",
+            "type": "int",
+            "doc": "Volume of options traded at the bid price."
+        },
+        {
+            "name": "vol_no_side",
+            "type": "int",
+            "doc": "Volume of options traded at an unknown price."
+        },
+        {
+            "name": "vol_mid",
+            "type": "int",
+            "doc": "Volume of options traded at the mid price."
+        },
+        {
+            "name": "vol_leg",
+            "type": "int",
+            "doc": "Volume of options traded as part of a complex trade."
+        },
+        {
+            "name": "vol_stock",
+            "type": "int",
+            "doc": "Volume of underlying stock traded as part of a complex trade."
+        },
+            {
+            "name": "vol",
+            "type": "int",
+            "doc": "Volume traded in the session at time of trade execution."
+        },
+        {
+            "name": "oi",
+            "type": "int",
+            "doc": "Open interest of the option."
+        },
+        {
+            "name": "tags",
+            "type": {
+                "type": "array",
+                "items": "string"
+            },
+            "doc": "Array of tags associated with the trade."
+        }
+    ]
+}

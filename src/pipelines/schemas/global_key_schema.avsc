@@ -1,0 +1,16 @@
+{
+    "type": "record",
+    "name": "GlobalKeySchema",
+    "namespace": "io.tradesignals.kafka",
+    "doc": "Schema for kafka message keys.",
+    "fields": [
+        {"name": "message_id", "type": "string", "doc": "Unique message identifier per message delivery attempt."},
+        {"name": "ts_out", "type": {"type": "long", "logicalType": "timestamp-millis"}, "doc": "Timestamp in ms since UNIX epoch the data was sent to TradeSignals by the source."},
+        {"name": "source_id", "type": "string", "doc": "Unique identifier for the publisher of the data, see https://docs.tradesignals.io/docs/publisher-ids"},
+        {"name": "dataset_id", "type": "string", "doc": "Unique identifier for the dataset of the data, see https://docs.tradesignals.io/docs/dataset-ids"},
+        {"name": "schema_version", "type": "int", "doc": "Version of the schema used to encode the data."},
+        {"name": "schema_subject", "type": "string", "doc": "Subject of the schema used to encode the data."},
+        {"name": "schema_type", "type": "string", "doc": "Type of the schema used to encode the data.", "default": "AVRO"},
+        {"name": "service_id", "type": "string", "doc": "Unique identifier for the service that produced the message."}
+    ]
+}

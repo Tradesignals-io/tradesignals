@@ -8,10 +8,8 @@ from textwrap import dedent
 
 import nox
 
-
 try:
-    from nox_poetry import Session
-    from nox_poetry import session
+    from nox_poetry import Session, session
 except ImportError:
     message = f"""\
     Nox failed to import the 'nox-poetry' package.
@@ -22,8 +20,8 @@ except ImportError:
     raise SystemExit(dedent(message)) from None
 
 
-package = "streaming"
-python_versions = ["3.10", "3.9", "3.8", "3.7"]
+package = "tradesignals"
+python_versions = ["3.11", "3.10", "3.9", "3.8"]
 nox.needs_version = ">= 2021.6.6"
 nox.options.sessions = (
     "pre-commit",
@@ -112,7 +110,11 @@ def activate_virtualenv_in_precommit_hooks(session: Session) -> None:
 
 @session(name="pre-commit", python=python_versions[0])
 def precommit(session: Session) -> None:
-    """Lint using pre-commit."""
+    """Lint using pre-commit.
+
+    Args:
+        session: The Session object.
+    """
     args = session.posargs or [
         "run",
         "--all-files",
@@ -140,7 +142,12 @@ def precommit(session: Session) -> None:
 
 @session(python=python_versions[0])
 def safety(session: Session) -> None:
-    """Scan dependencies for insecure packages."""
+    """Scan dependencies for insecure packages.
+
+    Args:
+        session: The Session object.
+    """
+
     requirements = session.poetry.export_requirements()
     session.install("safety")
     session.run("safety", "check", "--full-report", f"--file={requirements}")
@@ -148,7 +155,12 @@ def safety(session: Session) -> None:
 
 @session(python=python_versions)
 def mypy(session: Session) -> None:
-    """Type-check using mypy."""
+    """Type-check using mypy.
+
+    Args:
+        session: The Session object.
+    """
+
     args = session.posargs or ["src", "tests", "docs/conf.py"]
     session.install(".")
     session.install("mypy", "pytest")
@@ -159,7 +171,11 @@ def mypy(session: Session) -> None:
 
 @session(python=python_versions)
 def tests(session: Session) -> None:
-    """Run the test suite."""
+    """Run the test suite.
+
+    Args:
+        session: The Session object.
+    """
     session.install(".")
     session.install("coverage[toml]", "pytest", "pygments")
     try:
@@ -171,7 +187,11 @@ def tests(session: Session) -> None:
 
 @session(python=python_versions[0])
 def coverage(session: Session) -> None:
-    """Produce the coverage report."""
+    """Produce the coverage report.
+
+    Args:
+        session: The Session object.
+    """
     args = session.posargs or ["report"]
 
     session.install("coverage[toml]")
@@ -184,7 +204,11 @@ def coverage(session: Session) -> None:
 
 @session(python=python_versions[0])
 def typeguard(session: Session) -> None:
-    """Runtime type checking using Typeguard."""
+    """Runtime type checking using Typeguard.
+
+    Args:
+        session: The Session object.
+    """
     session.install(".")
     session.install("pytest", "typeguard", "pygments")
     session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
@@ -192,7 +216,11 @@ def typeguard(session: Session) -> None:
 
 @session(python=python_versions)
 def xdoctest(session: Session) -> None:
-    """Run examples with xdoctest."""
+    """Run examples with xdoctest.
+
+    Args:
+        session: The Session object.
+    """
     if session.posargs:
         args = [package, *session.posargs]
     else:
@@ -207,7 +235,11 @@ def xdoctest(session: Session) -> None:
 
 @session(name="docs-build", python=python_versions[0])
 def docs_build(session: Session) -> None:
-    """Build the documentation."""
+    """Build the documentation.
+
+    Args:
+        session: The Session object.
+    """
     args = session.posargs or ["docs", "docs/_build"]
     if not session.posargs and "FORCE_COLOR" in os.environ:
         args.insert(0, "--color")
@@ -224,7 +256,11 @@ def docs_build(session: Session) -> None:
 
 @session(python=python_versions[0])
 def docs(session: Session) -> None:
-    """Build and serve the documentation with live reloading on file changes."""
+    """Build and serve the documentation with live reloading on file changes.
+
+    Args:
+        session: The Session object.
+    """
     args = session.posargs or ["--open-browser", "docs", "docs/_build"]
     session.install(".")
     session.install("sphinx", "sphinx-autobuild", "sphinx-click", "furo", "myst-parser")

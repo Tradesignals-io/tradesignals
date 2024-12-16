@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "{{ cookiecutter.input_topic }}",
+    "namespace": "io.tradesignals.pipeline",
+    "doc": "{{ cookiecutter.friendly_name }} stream processing pipeline application for Tradesignals.io.",
+    "fields": [
+        {"name": "timestamp_ms", "type": {"type": "long", "logicalType": "timestamp-millis" }, "doc": "The timestamp of the event in milliseconds."},
+        {"name": "price", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 6}, "doc": "The price of the event."},
+        {"name": "bid_00_px", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 6}, "doc": "The price of the event."},
+        {"name": "ask_00_px", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 6}, "doc": "The price of the event."},
+        {"name": "fract_decimal", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 16}, "doc": "The price of the event."},
+        {"name": "big_amount", "type": {"type": "bytes", "logicalType": "decimal", "precision": 38, "scale": 6}, "doc": "The price of the event."}
+    ]
+}

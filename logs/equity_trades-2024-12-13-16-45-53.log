@@ -1,0 +1,352 @@
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC
+BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Traceback (most recent call last):
+  File "/Users/macanderson/Tradesignals/src/pipelines/equity_trades/equity_trades/pipeline.py", line 290, in run
+    self.client.subscribe(  # type: ignore
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/client.py", line 489, in subscribe
+    self._session.subscribe(
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 500, in subscribe
+    self._connect(dataset=dataset)
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 581, in _connect
+    ).result()
+      ^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/macanderson/Tradesignals/.venv/lib/python3.11/site-packages/databento/live/session.py", line 625, in _connect_task
+    session_id = await asyncio.wait_for(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/macanderson/.pyenv/versions/3.11.10/lib/python3.11/asyncio/tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+databento.common.error.BentoError: User authentication failed: Unable to submit the request because there is an unpaid invoice.
+Starting client
+Subscribing to DBEQ.BASIC

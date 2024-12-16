@@ -1,0 +1,165 @@
+# Topics is a collection of topics that are used by the streaming application.
+Topics:
+
+  # option_trades is a topic that is used to store the option trades.
+  option_trades:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: option_trades
+      name: OptionTrades
+      type: record
+      version: 1
+      subject: option_trades-value
+      doc: Option trades aggregated by symbol and timestamp
+
+  # option_trades_aggs is a topic that is used to store the aggregated option trades.
+  option_trades_aggs:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: option_trades_aggs
+      name: OptionTradesAggs
+      type: record
+      version: 1
+      subject: option_trades_aggs-value
+      doc: Option trades aggregated by symbol and timestamp
+      fields:
+      - name: symbol
+        type: string
+        doc: Symbol of the option
+        min_length: 1
+        max_length: 10
+      - name: timestamp
+        type: long
+        logical_type: timestamp-millis
+        doc: Timestamp of the trade
+      - name: oi
+        type: int
+        doc: Open interest for the option contract at the time of the trade.
+      - name: price
+        type: bytes
+        logical_type: decimal
+        precision: 2
+        scale: 2
+        doc: Price of the option at the time of the trade.
+
+  # equity_trades is a topic that is used to store the stock trades.
+  equity_trades:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: stock_trades
+      name: StockTrades
+      type: record
+      version: 1
+      subject: stock_trades-value
+      doc: Stock trades aggregated by symbol and timestamp
+
+  # stock_trades_aggs is a topic that is used to store the aggregated stock trades.
+  stock_trades_aggs:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: stock_trades_aggs
+      name: StockTradesAggs
+      type: record
+      version: 1
+      subject: stock_trades_aggs-value
+      doc: Stock trades aggregated by symbol and timestamp
+
+  # futures_trades is a topic that is used to store the futures trades.
+  futures_trades:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: futures_trades
+      name: FuturesTrades
+      type: record
+      version: 1
+      subject: futures_trades-value
+      doc: Futures trades aggregated by symbol and timestamp
+
+  # futures_trades_aggs is a topic that is used to store the aggregated futures trades.
+  futures_trades_aggs:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: futures_trades_aggs
+      name: FuturesTradesAggs
+      type: record
+      version: 1
+      subject: futures_trades_aggs-value
+      doc: Futures trades aggregated by symbol and timestamp
+
+  # crypto_trades is a topic that is used to store the crypto trades.
+  crypto_trades:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: crypto_trades
+      name: CryptoTrades
+      type: record
+      version: 1
+      subject: crypto_trades-value
+      doc: Crypto trades aggregated by symbol and timestamp
+
+  # crypto_trades_aggs is a topic that is used to store the aggregated crypto trades.
+  crypto_trades_aggs:
+    num_partitions: 4
+    replication_factor: 3
+    min_insync_replicas: 2
+    retention_ms: 2592000000
+    retention_bytes: -1
+    cleanup_policy: delete
+    key_serializer: string
+    value_serializer: avro
+    value_schema:
+      namespace: crypto_trades_aggs
+      name: CryptoTradesAggs
+      type: record
+      version: 1
+      subject: crypto_trades_aggs-value
+      doc: Crypto trades aggregated by symbol and timestamp

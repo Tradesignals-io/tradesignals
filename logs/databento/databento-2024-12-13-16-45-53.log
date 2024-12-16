@@ -1,0 +1,186 @@
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:54.045874+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+read 38 bytes from remote gateway
+received CRAM challenge: ahGi3fx34HpuwDxioFEh8poNL0qxtXYt
+sending CRAM challenge response: auth=e59396e3d2274c9c10cc76d4b60a0f45cce096dca10d873b6c434c0b0f4c2fb1-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:54.593725+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+read 38 bytes from remote gateway
+received CRAM challenge: 9Tma55EhbEqOUhqWlwXURVCiSp0HRYDT
+sending CRAM challenge response: auth=18e41a53b5e0f2770d4fe4563ecb4a2a681c3bee44d7f1c111d31d8c42e23318-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:54.979964+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: BLOsnBzKf9Li4Tp7T57oM3xP5Z4lFgTk
+sending CRAM challenge response: auth=5eddbb29da58e34150ec9b5e417673ed7931cd0629d9d2dd525088cbadf2e3f4-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:55.573997+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+read 38 bytes from remote gateway
+received CRAM challenge: HNcqIkkk3A5fWP1MrQfyVjiecJESi6qZ
+sending CRAM challenge response: auth=b553506d6b394ea1ea49ec6d4785e09fcd961a97d1355ad35e86f3cd9e496aec-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:55.990430+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: G722rBqy0SfJC4dtP7bknpCTltJtMlGu
+sending CRAM challenge response: auth=250cf830691c2113d6176575331b5393d2b25c8768ec1f07ff362243551818b1-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:56.322224+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+read 38 bytes from remote gateway
+received CRAM challenge: 7OkcHmp6gXL16QMTl3nrENeH0f5Xov17
+sending CRAM challenge response: auth=8cdc50881ac1000de05f11ccab6da736784db61c3d464608daf8f7ae579dbab9-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:56.606561+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+stopping live client
+stopping live client
+stopping live client
+stopping live client
+stopping live client
+stopping live client
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: elgiTz2swliKP86po5XxcMVr5HpeIJvh
+sending CRAM challenge response: auth=050125aaba46e97b2dead9fd8f1d1feeae597ff9c7a131fc9e8f7a656d26597b-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:56.895504+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: 81DzsPCcTmpOmgqM1VT2IdAJprqK8WYA
+sending CRAM challenge response: auth=23d85078baae46d26c8eb04e9cfd6653b825854f8fc76bae8ed9bb7c4b170910-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:57.187034+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: fdVIGuadsThWouXMWnuMCnuLZBw9HqLZ
+sending CRAM challenge response: auth=a9bca05045673ebfa5a21e90ced22c560115f131ec3295c6b7a43235ffc6e614-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:57.472800+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: uPiaToroyf9QnVMO390RT2ZUIxkLHEfG
+sending CRAM challenge response: auth=16dc1c409069e3ad23c9d4e0e32823c190fc50336a1e3f0de50fdc81c8031155-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:57.760153+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: OCPqWJNqXtSo3ZQn5ByOTvoBNSogIG0z
+sending CRAM challenge response: auth=1582fc6dcca7e96255e5d9eac53fc5a65eed86e41e6f25ca13433180ca0d2af3-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:58.043854+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: smxSXytMem2NVI1XAUvJS8CaBJgKaGy3
+sending CRAM challenge response: auth=60227ce37931abbc1b207edee229fcbc2cb2dc5b60bf2f71a35b8d682e2cf408-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:58.333705+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 56 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+received CRAM challenge: 5ldelxtya0kqmbL8FXeHdgfrqNRtWFSi
+sending CRAM challenge response: auth=ca5e27cec8e7e2540a9e235a6dd132ac4d27210627f2b26cce9243a89274b1e6-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:58.620407+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5
+read 38 bytes from remote gateway
+received CRAM challenge: Cq3A6uQp0qkP4tfFlbfJ8cShRDqlNL8l
+sending CRAM challenge response: auth=8ccff19833426b3f42faf0b5651c487a0e9b244842602153c890196ed4f388e8-QpHX8|dataset=DBEQ.BASIC|encoding=dbn|ts_out=1|client=Databento/0.46.0 Python/3.11.10 Darwin/23.6.0
+read 81 bytes from remote gateway
+CRAM authentication failed: Unable to submit the request because there is an unpaid invoice.
+connection closed
+subscribing to tbbo:raw_symbol ALL_SYMBOLS start=2024-12-13 00:45:58.982397+00:00 snapshot=False
+using default gateway for dataset DBEQ.BASIC
+connecting to remote gateway
+established connection to gateway
+connected to dbeq-basic.lsg.databento.com:13000
+read 18 bytes from remote gateway
+greeting received by remote gateway v0.5.5

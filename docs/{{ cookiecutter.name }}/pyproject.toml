@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "{{ cookiecutter-name }}"
+version = "0.1.0"
+description = ""
+authors = ["Dev Ops <devops@tradesignals.io>"]
+readme = "README.md"
+packages = [{include = "{{ cookiecutter"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

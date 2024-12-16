@@ -1,0 +1,25 @@
+Starting client
+Subscribing to DBEQ.BASIC
+Subscribed to DBEQ.BASIC
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 18614, ts_event: 1734094801744190849 }, price: 1.960000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094801745205429, ts_in_delta: 250647, sequence: 56493, levels: [BidAskPair { bid_px: 1.930000000, ask_px: 1.960000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094802883984312 }, price: 2.280000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094802884673057, ts_in_delta: 70953, sequence: 56639, levels: [BidAskPair { bid_px: 2.270000000, ask_px: 2.280000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094805438326246 }, price: 2.280000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094805438690955, ts_in_delta: 58808, sequence: 56724, levels: [BidAskPair { bid_px: 2.270000000, ask_px: 2.280000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094805689563649 }, price: 2.270000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094805689931133, ts_in_delta: 48549, sequence: 56734, levels: [BidAskPair { bid_px: 2.270000000, ask_px: 2.290000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094805689563649 }, price: 2.270000000, size: 12, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094805690008971, ts_in_delta: 38439, sequence: 56735, levels: [BidAskPair { bid_px: 2.270000000, ask_px: 2.290000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094812469265886 }, price: 2.230000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094812469620975, ts_in_delta: 64192, sequence: 56907, levels: [BidAskPair { bid_px: 2.210000000, ask_px: 2.230000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 18614, ts_event: 1734094814212780517 }, price: 1.960000000, size: 10, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094814213185455, ts_in_delta: 50805, sequence: 56933, levels: [BidAskPair { bid_px: 1.960000000, ask_px: 1.970000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 1429, ts_event: 1734094819069638935 }, price: 213.210000000, size: 50, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094819070675741, ts_in_delta: 57499, sequence: 57017, levels: [BidAskPair { bid_px: UNDEF_PRICE, ask_px: UNDEF_PRICE, bid_sz: 0, ask_sz: 0, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 10009, ts_event: 1734094824375272818 }, price: 1.670000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094824376020075, ts_in_delta: 59893, sequence: 57115, levels: [BidAskPair { bid_px: 1.650000000, ask_px: 1.670000000, bid_sz: 750, ask_sz: 500, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 18614, ts_event: 1734094827561022828 }, price: 1.960000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094827561382097, ts_in_delta: 64266, sequence: 57201, levels: [BidAskPair { bid_px: 1.960000000, ask_px: 1.970000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }
+Received MBP1Msg
+Received MBP1Msg: Mbp1Msg { hd: RecordHeader { length: 22, rtype: Mbp1, publisher_id: DbeqBasicIexg, instrument_id: 16773, ts_event: 1734094836033493440 }, price: 2.200000000, size: 200, action: 'T', side: 'N', flags: LAST | TOB (194), depth: 0, ts_recv: 1734094836033808445, ts_in_delta: 62622, sequence: 57359, levels: [BidAskPair { bid_px: 2.200000000, ask_px: 2.210000000, bid_sz: 200, ask_sz: 200, bid_ct: 0, ask_ct: 0 }] }

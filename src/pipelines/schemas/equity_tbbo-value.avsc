@@ -1,0 +1,26 @@
+{
+    "name": "EquityTrades",
+    "namespace": "io.tradesignals.equity_options",
+    "type": "record",
+    "doc": "Equity trades with exchange best bid and offer before each trade.",
+    "fields": [
+        {"name": "received_ts", "type": "long", "doc": "Timestamp in ms since UNIX epoch."},
+        {"name": "out_ts", "type": "long", "doc": "Timestamp in ms since UNIX epoch."},
+        {"name": "timestamp", "type": "long", "doc": "Timestamp in ms since UNIX epoch.", "logicalType": "timestamp-millis", "flink.precision": 3},
+        {"name": "symbol", "type": "string", "doc": "Instrument symbol."},
+        {"name": "qty", "type": "int", "doc": "Trade quantity."},
+        {"name": "price", "type": {"type": "bytes", "logicalType": "decimal", "precision": 16, "scale": 4}, "doc": "Last traded price."},
+        {"name": "side", "type": {"type": "enum", "name": "TradeSide", "symbols": ["A", "B", "N"]}, "doc": "Trade side, A=Ask, B=Bid, N=None."},
+        {"name": "venue", "type": "string", "doc": "Venue and dataset name."},
+        {"name": "bid_px", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 6}, "doc": "Best bid price."},
+        {"name": "ask_px", "type": {"type": "bytes", "logicalType": "decimal", "precision": 18, "scale": 6}, "doc": "Best ask price."},
+        {"name": "bid_qty", "type": "int", "doc": "Top level bid size."},
+        {"name": "ask_qty", "type": "int", "doc": "Top level ask size."},
+        {"name": "bid_ct", "type": "int", "doc": "Number of bid orders at top level."},
+        {"name": "ask_ct", "type": "int", "doc": "Number of ask orders at top level."},
+        {"name": "sequence", "type": "int", "doc": "Sequence number."},
+        {"name": "flags", "type": "int", "doc": "Bit field indicating event end, message characteristics, and data quality."},
+        {"name": "depth", "type": "int", "doc": "Depth of the top level bid and ask."},
+        {"name": "tags", "type": {"type": "array", "items": "string"}, "doc": "Tags."}
+    ]
+}
